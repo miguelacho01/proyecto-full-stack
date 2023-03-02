@@ -4,30 +4,26 @@
   box-sizing: border-box;
 }
 
-h1 {
-  width: 1000px;
-  height: 80px;
-  display: grid;
-  place-content: center;
-  font-size: 40px;
-  border-radius: 20px;
-  background-color: white;
-}
+
 body > header > h1 {
   color: rgb(115, 37, 134);
+  
 }
 
 img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin: auto;
+  
+
 }
 
 ul {
   text-decoration: none;
   list-style: none;
-  margin-right: 40px;
+  
+  
+  
 }
 
 .navbar-sesion > p {
@@ -42,35 +38,73 @@ li > a {
   grid-area: header;
   display: grid;
   place-content: center;
+  border-radius: 20px;
+  background-color: white;
+ 
 }
 
-.navbar {
-  grid-area: navbar;
-}
+.navbar {grid-area: navbar;}
+.main {grid-area: main;}
 
-.main {
-  grid-area: main;
-}
 .container-fluid {
   height: 100vh;
   background-color: rgba(95, 158, 187, 0.342);
   display: grid;
-  grid-template-columns: 200px;
-  grid-template-rows: 100px;
+  grid-template-columns:15%;
+  grid-template-rows:10%;
   grid-template-areas:
     "navbar   header"
     "navbar   main";
-  padding: 20px;
+    padding:20px;
 }
 .navbar-sesion {
   background-color: white;
-  margin: auto;
-  width: 85%;
-  height: 600px;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+   height:100%;
+   width: 75%; 
   border-radius: 20px;
   color: rgb(115, 37, 134);
+}
+.login{
+  margin-top: 200px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-creditos {
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  height: 70px;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.nuemero-clientes {
+  width: 300px;
+  height: 140px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.creditos {
+  display: flex;
+  flex-direction: column;
+  /* height: 200px; */
+  height: 20px;
 }
 
 #contador {
@@ -85,36 +119,37 @@ li > a {
   border-radius: 20px;
   background-color: blueviolet;
   border: none;
-  margin-top: 300px;
+  /* margin-top: 600px; */
   height: 30px;
   width: 150px;
+  color:white
 }
 
-.col {
+thead>tr{
   background-color: blueviolet;
-  text-align: center;
+  color: white;
+
+  
 }
 
-.crear-cliente {
+.crear-cliente{
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  justify-content:space-between;
+ margin: 20px;
+ 
 }
 
-.btn-crear-cliente {
+.btn-crear-cliente{
   border-radius: 20px;
   background-color: blueviolet;
   border: none;
   height: 30px;
   width: 150px;
+  color: white;
 }
 
-.buscar {
+input{
   border: none;
-  border-radius: 10px;
   outline: none;
-}
-
-td {
-  text-align: center;
+  border-radius: 5px;
 }
