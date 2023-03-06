@@ -31,7 +31,7 @@
       <p>Admin</p>
       <ul>
         <li>
-          <a href="#">
+          <a href="../inicio1/index.html">
             <span class="material-symbols-outlined"> in_home_mode </span>
             Inicio</a
           >
@@ -54,41 +54,85 @@
     </nav>
 
     <main class="main-container">
-        <div class="crear-cliente">
-            <input type="text" class="buscar" placeholder="Nombre, Nit o cc">
-            <button class="btn-crear-cliente" >Clear Cliente</button>
-        </div>
-      <table class="container">
-        <thead>
-            <tr>
-              <th class="col">Nombre</th>
-              <th class="col">Apellido</th>
-              <th class="col">Nit-cc</th>
-              <th class="col">Direccion</th>
-              <th class="col">Ciudad</th>
-              <th class="col">Telefono</th>
-              <th class="col">Cupo disponible</th>
-              <th class="col">Estado</th>
-              <th class="col">Acciones</th>
-            </tr>
-        </thead>
-            <tbody>
-                <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-            </tbody>
+      <div class="crear-cliente">
+        <input type="text" class="buscar" placeholder="Nombre, Nit o cc" />
+        <button class="btn-crear-cliente">Clear Cliente</button>
+      </div>
+      <table id="tabla" class="container">
+          <tr>
+            <th class="col">Nombre</th>
+            <th class="col">Apellido</th>
+            <th class="col">Nit-cc</th>
+            <th class="col">Direccion</th>
+            <th class="col">Ciudad</th>
+            <th class="col">Telefono</th>
+            <th class="col">Cupo disponible</th>
+            <th class="col">Estado</th>
+            <th class="col">Acciones</th>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
       </table>
+    </main>
 
-      <dialog>
+    <dialog id="modal">
+      <div id="dialog">
+        <form class="contenedor">
+          <button class="atras">Atras</button>
+          <div class="col1">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" />
 
-      </dialog>
+            <label for="nit">Nit/CC</label>
+            <input type="text" id="nit" name="nit" />
+
+            <label for="ciudad">Ciudad</label>
+            <select id="cuidad">
+              <option value="Bucaramanga">Bucaramanga</option>
+              <option value="Bogota">Bogota</option>
+              <option value="Medellin">Medellin</option>
+            </select>
+
+            <label for="contacto">Contacto</label>
+            <input type="text" id="contacto" name="contacto" />
+
+            <button class="guardar-cambios">Guardar cambios</button>
+          </div>
+
+          <div class="col2">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" />
+
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion" />
+
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" />
+          </div>
+
+          <div class="col3">
+            <label for="Cupo">Cupo Total</label>
+            <input type="text" id="cupo" name="Cupo" />
+
+            <label for="disponible">Cupo disponible:</label>
+            <input type="text" id="disponible" name="disponible" />
+
+            <label for="dia-gracia">Dias de gracia:</label>
+            <input type="text" id="dia-gracia" name="dia-gracia" />
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="main.js"></script>
   </body>
 </html>
